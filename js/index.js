@@ -34,10 +34,17 @@ function display(){
         <tr>
         <td class="py-3">${i+1}</td>
         <td class="py-3">${inputsList[i].name}</td>
-        <td class="py-3"><a href="${inputsList[i].link}" class="text-white rounded-3 text-decoration-none  py-2 px-3 fw-semibold text-center visit-link" target="_blank">
-          <i class="fa-solid fa-eye"></i> Visit</a></td>
-          <td><button class="btn btn-danger rounded-3 fw-semibold " onclick='delItems(${i})'><i class="fa-solid fa-trash-can"></i>
-            Delete</button></td>
+
+        <td class="py-3">
+        <a href="${inputsList[i].link}" class=" text-decoration-none fw-semibold text-center" target="_blank">
+        <button  class="text-white btn btn-success rounded-3 fw-semibold visit-link ">
+          <i class="fa-solid fa-eye"></i> Visit
+        </button>
+        </a>
+      </td>
+
+          <td class="py-3"><button class="btn btn-danger rounded-3 fw-semibold delete-btn d-flex align-items-center gap-1 justify-content-center m-auto" onclick='delItems(${i})'><i class="fa-solid fa-trash-can"></i>
+          Delete</button></td>
       </tr>`
     }
     document.getElementById('bodyID').innerHTML = holder;

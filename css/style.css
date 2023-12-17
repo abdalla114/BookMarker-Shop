@@ -43,24 +43,11 @@ body{
 .sub-btn{
     width: 8rem;
 }
+.delete-btn{
+    width: 5.5rem  
+}
 .visit-link{
-background-color: rgb(153,173,53);
-position: relative;
-}
-.visit-link::after{
-    content: '';
-    position: absolute;
-    border-radius: .5rem;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.129);
-    transition: all .3s;
-}
-.visit-link:hover::after{
-    opacity: 1;
+    width: 5.5rem  
 }
 
 .visit-link:focus{
@@ -68,6 +55,4 @@ position: relative;
     color: black !important;
     border: 1.5px solid black;
 }
-.spans{
-    font-size: 6rem ;
-}
+
