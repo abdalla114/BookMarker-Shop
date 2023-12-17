@@ -1,0 +1,73 @@
+body{
+    background-color: rgb(247,236,222);
+}
+@font-face {
+    font-family:title font;
+    src: url(../Pacifico/Pacifico-Regular.ttf);
+}
+@font-face {
+    font-family: titleh font;
+    src: url(../Righteous/Righteous-Regular.ttf);
+}
+.title{
+    font-family: title font;
+    font-size: 3.2rem;
+    position: relative;
+ }
+.title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top:65%;
+    bottom: 10px;
+    width: 100%;
+    background-color: #fec260;
+    z-index: -1;
+    transition: all .5s;
+}
+.title:hover::before{
+    top: 40%;
+}
+.title::selection{
+    background-color: #fec260;
+}
+.forma{
+    border-block: 2px dotted black;
+}
+.forma h2{
+    font-family: titleh font;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+.sub-btn{
+    width: 8rem;
+}
+.visit-link{
+background-color: rgb(153,173,53);
+position: relative;
+}
+.visit-link::after{
+    content: '';
+    position: absolute;
+    border-radius: .5rem;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.129);
+    transition: all .3s;
+}
+.visit-link:hover::after{
+    opacity: 1;
+}
+
+.visit-link:focus{
+    background-color: transparent !important;
+    color: black !important;
+    border: 1.5px solid black;
+}
+.spans{
+    font-size: 6rem ;
+}
