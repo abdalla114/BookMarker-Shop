@@ -1,1 +1,5 @@
- 
+ @media screen and (max-width:500px) {
+    .invalid-massage{
+        width: 20rem;
+    }
+ }
