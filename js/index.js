@@ -23,9 +23,12 @@ function add(){
   }
   else{
     sName.classList.add('is-invalid');
-    url.classList.add('is-invalid')
+    url.classList.add('is-invalid');
+    document.getElementById('warning').classList.remove('d-none');
+    document.getElementById('cover').classList.remove('d-none');
+ }
   }
-}
+
 
 function display(){
     var holder = ``
@@ -77,7 +80,7 @@ function validationName(){
 }
 
  function validationSite(){
-var regexSite =/^(https:\/\/www\.)[A-z]{1,}(\.com\/)$/;
+var regexSite =/^(https:\/\/)(www\.)[A-z]{1,}(\.com)\/?$/;
 var site = url.value;
 if(regexSite.test(site)){
     url.classList.add('is-valid')
@@ -89,4 +92,9 @@ else{
     url.classList.add('is-invalid')
     return false
 }
+ }
+
+ function closing(){
+  document.getElementById('warning').classList.add('d-none')
+  document.getElementById('cover').classList.add('d-none')
  }

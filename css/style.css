@@ -39,9 +39,11 @@ body{
     background-image: linear-gradient(to right, #3ca55c, #b5ac49);
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
+
 }
 .sub-btn{
     width: 8rem;
+    cursor: pointer;
 }
 .delete-btn{
     width: 5.5rem  
@@ -55,4 +57,17 @@ body{
     color: black !important;
     border: 1.5px solid black;
 }
-
+.dot{
+    width: 1rem;
+    height: 1rem;
+}
+ .cover{
+    background-color: rgba(0, 0, 0, 0.223);
+     
+ }
+ .invalid-massage{
+    width: 25rem;
+ }
+ .thebig{
+min-height: 100%;
+ }
